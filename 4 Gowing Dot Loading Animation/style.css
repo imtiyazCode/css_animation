@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(7, 10, 24);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%,-50%);
+}
+.container span{
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: animate 2s linear infinite;
+}
+span:nth-child(1){
+    background: #fff900;
+    box-shadow: 0 0 25px #fff900;
+}
+span:nth-child(2){
+    background: #00ff28;
+    animation-delay: -1s;
+    box-shadow: 0 0 25px #00ff28;
+}
+span:nth-child(3){
+    background: #ff005a;
+    box-shadow: 0 0 25px #ff005a;
+    animation-delay: -0.5s;
+}
+span:nth-child(4){
+    background: #3896ff;
+    box-shadow: 0 0 25px #3896ff;
+    animation-delay: -1.5s;
+}
+
+@keyframes animate {
+    0%,100%{
+        top: 0; left: 0;
+    }
+    12.5%{
+        top: 30%; left: 50%;
+    }
+    25%{
+        top: 0; left: 100%;
+    }
+    37.5%{
+        top: 50%; left: 80%;
+    }
+    50%{
+        top: 100%; left: 100%;
+    }
+    62.5%{
+        top: 80%; left: 50%;
+    }
+    75%{
+        top: 100%; left: 0;
+    }
+    87.5%{
+        top: 50%; left: 30%;
+    }
+}
