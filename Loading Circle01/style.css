@@ -42,16 +42,6 @@ body{
         transform: rotate(360deg);
     }
 }
-/* @keyframes bounce {
-    0%,80%,100%{
-        transform: scale(0);
-        background: #FC5185;
-    }
-    40%{
-        background: #3FC1C9;
-        transform: scale(1);
-    }
-} */
 
 @keyframes bounce {
     0%,80%,100%{
