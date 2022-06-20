@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Progress Bar</title>
+</head>
+<body>
+    <div class="card">
+        <div class="percent" style="--clr:#F36B9E;--num:85">
+            <div class="dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"> </circle>
+                <circle cx="70" cy="70" r="70"> </circle>
+            </svg>
+            <div class="number">
+                <h2 id="percentNum"></h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let counter = 0;
+    const num = document.getElementById('percentNum');
+    setInterval( () => {
+        if( counter != 85){
+            counter++;
+            num.innerHTML = `${counter}<span>%</span>`
+        }
+    }, 2000/85)
+</script>
+</html>
