@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.social_icons li a {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgb(0 0 0 / 50%);
+    text-decoration: none;
+    color: #555;
+}
+
+.social_icons li a::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b2b2b2;
+    transition: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.social_icons li a::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #e5e5e5;
+    transition: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.social_icons li a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.social_icons li:hover .fa {
+    color: #fff;
+}
+
+.social_icons li:hover:nth-child(1) a {
+    background-color: #3b5999;
+}
+
+.social_icons li:hover:nth-child(1) a::before {
+    background-color: #2f477a;
+}
+
+.social_icons li:hover:nth-child(1) a::after {
+    background-color: #4e69a3;
+}
+
+.social_icons li:hover:nth-child(2) a {
+    background-color: #e4405f;
+}
+
+.social_icons li:hover:nth-child(2) a::before {
+    background-color: #b6334c;
+}
+
+.social_icons li:hover:nth-child(2) a::after {
+    background-color: #e6536f;
+}
+
+.social_icons li:hover:nth-child(3) a {
+    background-color: #55acee;
+}
+
+.social_icons li:hover:nth-child(3) a::before {
+    background-color: #4489be;
+}
+
+.social_icons li:hover:nth-child(3) a::after {
+    background-color: #66b4ef;
+}
+
+.social_icons li:hover:nth-child(4) a {
+    background-color: #dd4b39;
+}
+
+.social_icons li:hover:nth-child(4) a::before {
+    background-color: #b03c2d;
+}
+
+.social_icons li:hover:nth-child(4) a::after {
+    background-color: #e05d4c;
+}
+
+.social_icons li:hover:nth-child(5) a {
+    background-color: #0077b5;
+}
+
+.social_icons li:hover:nth-child(5) a::before {
+    background-color: #005f90;
+}
+
+.social_icons li:hover:nth-child(5) a::after {
+    background-color: #1984bc;
+}
