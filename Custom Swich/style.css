@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch-container {
+    height: 10em;
+    width: 24em;
+    box-shadow: 5px 5px 15px 5px rgba(17, 17, 17, 0.152);
+    border-radius: 10em;
+    position: relative;
+}
+.switch-color {
+    width: 22em;
+    height: 8em;
+    left: 1em;
+    top: 1em;
+    background: #cfd8dc;
+    border-radius: 10em;
+    z-index: -1;
+    position: absolute;
+    transition: all 500ms cubic-bezier(0.34, 1.36, 0.2, 1);
+  }
+  input {
+    display: none;
+  }
+label {
+    height: 8em;
+    width: 8em;
+    position: absolute;
+    box-shadow: 2px 2px 10px 2px rgba(17, 17, 17, 0.152);
+    border-radius: 50%;
+    z-index: 99;
+    background: white;
+    top: 1em;
+    left: 1em;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(0.34, 1.36, 0.2, 1);
+}
+label::before, label::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 5em;
+    position: absolute;
+    top: 0.3em;
+    color: #90a4ae;
+}
+label::before {
+    left: 0.42em;
+    content: "\f00d";
+}
+label::after {
+    left: 0.3em;
+    content: "\f00c";
+    opacity: 0;
+}
+#switch:checked~label::before {
+    opacity: 0;
+}
+#switch:checked~label::after {
+    opacity: 1;
+}
+#switch:checked ~ label {
+    transform: translatex(14em) rotatez(360deg);
+}
+#switch:checked ~ .switch-color {
+    background: #00e676;
+  }
