@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #131313;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    position: relative;
+    font-weight: 400;
+    border-radius: 50px;
+    color: #FFFFFF;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn .greet {
+    display: block;
+    font-size: 0;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    word-spacing: 2px;
+}
+
+.btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+    font-size: 18px;
+    background: #131313;
+    width: 150px;
+    height: 50px;
+    line-height: 1px;
+}
+
+.btn:hover .greet {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 0px;
+}
+
+.btn:hover i {
+    font-size: 0;
+}
