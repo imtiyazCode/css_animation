@@ -9,18 +9,19 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #F8F2FF;
 }
 
 .btn {
     width: 60px;
     height: 60px;
     background: #131313;
-    border: 1px solid #ffffff;
+    border: 1px solid #F8F2FF;
     font-size: 18px;
     position: relative;
     font-weight: 400;
     border-radius: 50px;
-    color: #FFFFFF;
+    color: #F8F2FF;
     transition: all 0.4s ease-in-out;
 }
 
