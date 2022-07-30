@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #252827;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    padding: 55px;
+    color: #fff;
+    background-image: url(https://raceoflearning.com/wp-content/app/images/rain.gif);
+  }
+  /* ======================== */
+          
+  h2 {
+    font-size: 28px;
+    color: #94b424;
+    line-height: 34px;
+    text-align: center;
+  }
+  
+  .offer {
+    position: relative;
+  }
+          
+  .off {
+    font-size: 50px;
+    color: #f7df1e;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+          
+  .off span {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .off span:before {
+    content: "%";
+    display: block;
+    font-size: 30px;
+  }
+  
+  .rotate {
+    animation: rotation 5s infinite linear;
+  }
+          
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
